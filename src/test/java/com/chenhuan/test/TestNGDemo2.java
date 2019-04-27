@@ -17,7 +17,7 @@ public class TestNGDemo2 {
 
 	@BeforeMethod
 	public void openChro() {
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\SeleniumTest\\src\\main\\resources\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\git\\SeleniumTest\\src\\main\\resources\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
@@ -40,9 +40,6 @@ public class TestNGDemo2 {
 
 	@Test
 	public void google() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",
-				"D:\\selenium\\SeleniumTest\\src\\main\\resources\\driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.baidu.com");
 		Thread.sleep(3000);

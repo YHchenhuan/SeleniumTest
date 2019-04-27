@@ -24,7 +24,7 @@ public class TestNGDemo2 {
 	@Test
 	public void firefox() throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver",
-				"D:\\selenium\\SeleniumTest\\src\\main\\resources\\driver\\geckoDriver.exe");
+				"D:\\git\\SeleniumTest\\src\\main\\resources\\driver\\geckoDriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.baidu.com");
@@ -55,7 +55,7 @@ public class TestNGDemo2 {
 	@Test
 	public void ie() throws InterruptedException {
 		System.setProperty("webdriver.ie.driver",
-				"D:\\selenium\\SeleniumTest\\src\\main\\resources\\driver\\IEDriverServer.exe");
+				"D:\\git\\SeleniumTest\\src\\main\\resources\\driver\\IEDriverServer.exe");
 		WebDriver driver = new InternetExplorerDriver();
 		driver.get("https://www.baidu.com");
 		driver.findElement(By.id("kw")).sendKeys("test");
@@ -68,7 +68,7 @@ public class TestNGDemo2 {
 	@Test
 	public void window() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\selenium\\SeleniumTest\\src\\main\\resources\\driver\\chromedriver.exe");
+				"D:\\git\\SeleniumTest\\src\\main\\resources\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		Dimension dimension = new Dimension(300, 300);
 		driver.manage().window().setSize(dimension);

@@ -5,7 +5,6 @@
 		<classes>
 			<class name="com.chenhuan.test.TestNGDemo2">
 				<methods>
-					<include name="google"></include>
 				</methods>
 			</class>
 		</classes>

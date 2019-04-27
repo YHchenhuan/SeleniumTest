@@ -29,7 +29,7 @@ public class HelloSelenium {
 		driver.findElement(By.id("loginBtn")).click();
 		System.out.println("end selenium");
 		driver.navigate().refresh();
-		driver.close();
+		driver.quit();
 
 	}
 }
